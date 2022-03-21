@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLinq", "MyLinq\MyLinq.csproj", "{C4FE3AAD-ADE6-4748-85EF-BDEC266F4E24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEntityFramework", "MyEntityFramework\MyEntityFramework.csproj", "{143B2904-A731-4033-BC32-E7A3F3AE9E85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C4FE3AAD-ADE6-4748-85EF-BDEC266F4E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4FE3AAD-ADE6-4748-85EF-BDEC266F4E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4FE3AAD-ADE6-4748-85EF-BDEC266F4E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143B2904-A731-4033-BC32-E7A3F3AE9E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143B2904-A731-4033-BC32-E7A3F3AE9E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143B2904-A731-4033-BC32-E7A3F3AE9E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143B2904-A731-4033-BC32-E7A3F3AE9E85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
