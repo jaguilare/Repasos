@@ -1,0 +1,29 @@
+﻿POSTGRES - Docker
+docker run -d -p 5432:5432 --name db_postgres --network some-network -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+docker exec -it id_container bash
+psql -U postgres 
+CREATE DATABASE test-db;
+\q
+
+
+POSTGRES - Entity Framework
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.Design
+Npgsql.EntityFrameworkCore.PostgreSQL
+Npgsql.EntityFrameworkCore.PostgreSQL.Design
+Microsoft.NETCore.App
+dotnet tool install --global dotnet-ef --version 5.0.15
+
+Generar Database First - Consola de Administrador de Paquetes
+Scaffold-DbContext "Host=localhost;Database=******;Username=*******;Password=*******" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -force (-force forzar cuando la db cambio)
+
+
+SQL SERVER - ENTITY FRAMEWORK
+Microsoft.EntityFrameworkCore.SQLServer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.Design
+dotnet tool install --global dotnet-ef --version 5.0.15
+
+Generar Database First - Consola de Administrador de Paquetes
+Scaffold-DbContext "Server=localhost; Database==******;; User==******;; Password==******;;" Microsoft.EntityFrameworkCore -OutputDir Models -force (-force forzar cuando la db cambio)

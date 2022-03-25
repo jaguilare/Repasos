@@ -13,26 +13,28 @@ namespace MyEntityFramework
             {
 
                 // agregar
-                //var p = new Persona()
-                //{
-                //    Identificacion = "980857",
-                //    Nombres = "Francisco",
-                //    Apellidos = "Ceballos",
-                //};
+                var p = new Persona()
+                {
+                    Identificacion = "980857",
+                    Nombres = "Francisco",
+                    Apellidos = "Ceballos",
+                };
+                context.Personas.Add(p);
+                context.SaveChanges();
 
-                //context.Personas.Add(p);
-                //context.SaveChanges();
 
                 // actualizar
-                var p = context.Personas.Find(3);
+                p = context.Personas.Find(3);
                 p.Nombres = "Puma";
                 context.Entry(p).State = EntityState.Modified;
                 context.SaveChanges();
+
 
                 // eliminar
                 p = context.Personas.Find(6);
                 context.Remove(p);
                 context.SaveChanges();
+
 
                 foreach (var persona in context.Personas.ToList())
                 {
