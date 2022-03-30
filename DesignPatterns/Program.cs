@@ -47,7 +47,11 @@ namespace DesignPatterns
             // mediante el constructor de dichas clase
 
 
-
+            /*El patrón de estrategia se trata realmente de tener una implementación diferente que logre (básicamente) lo mismo, 
+            de modo que una implementación pueda reemplazar a la otra según lo requiera la estrategia. 
+            Por ejemplo, puede tener diferentes algoritmos de clasificación en un patrón de estrategia. 
+            Las personas que llaman al objeto no cambian según la estrategia que se emplee, 
+            pero independientemente de la estrategia, el objetivo es el mismo (ordenar la colección).*/
 
             // ***** STRATEGY 
             var context = new Context(new CarStrategy());
@@ -57,6 +61,11 @@ namespace DesignPatterns
 
 
 
+            /*El patrón de estado se trata de hacer diferentes cosas en función del estado, 
+            dejando a la persona que llama aliviada de la carga de acomodar todos los estados posibles. 
+            Entonces, por ejemplo, puede tener un getStatus()método que devolverá diferentes estados según el estado del objeto, 
+            pero la persona que llama al método no tiene que codificarse de manera diferente para 
+            tener en cuenta cada estado potencial.*/
 
             // ***** STATE
             // El funcionamiento y estado cambian de acuerdo a la logica de cada estado
