@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.FactoryMethod
+namespace DesignPatterns.FactoryMethod.MyFactories
 {
 
     // Concret Product
