@@ -28,4 +28,8 @@ dotnet tool install --global dotnet-ef --version 5.0.15
 Generar Database First - Consola de Administrador de Paquetes
 Scaffold-DbContext "Server=localhost; Database==******;; User==******;; Password==******;;" Microsoft.EntityFrameworkCore -OutputDir Models -force (-force forzar cuando la db cambio)
 
+Scaffold-DbContext "Server=.\SQLExpress;Database=Repasos;User=sa;Password=Abc123..;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/DB -force
+
+Scaffold-DbContext "Server=localhost,1433;Database=Repasos;User Id=sa;Password=Abc123..;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/DB -force
+
 Crear las tablas en la base de datos y manipular.
